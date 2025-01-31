@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(27, 27, 27);
+}
+:root {
+  --main-color: rgb(249, 202, 47);
+}
+.container {
+  background-color: rgb(242, 241, 241);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+  height: 80vh;
+  border-radius: 0px 0px 20px 20px;
+}
+.header-info {
+  display: flex;
+  margin: 50px 20px 10px;
+  width: 420px;
+  flex-wrap: wrap;
+  height: 30%;
+}
+.header-info h1 {
+  font-size: 50px;
+  margin-right: 60px;
+}
+.header-info button {
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  background-color: var(--main-color);
+  cursor: pointer;
+  font-size: 20px;
+  height: 60px;
+  transition: 0.2s ease-in-out;
+}
+.header-info input {
+  width: 420px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.doing {
+  display: flex;
+  justify-content: start;
+  height: 500px;
+  width: 420px;
+}
+.doing ul {
+  list-style-type: none;
+  width: 100%;
+}
+.doing li {
+  background-color: var(--main-color);
+  color: white;
+  padding: 9px 30px;
+  width: 420px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.doing i {
+  background-color: #fff;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  width: fit-content;
+  height: fit-content;
+}
+.doing #btn2 {
+  margin-left: 10px;
+}
+.doing #i1:hover {
+  background-color: rgb(45, 237, 55);
+  color: #fff;
+}
+.doing #btn2:hover {
+  background-color: rgb(237, 45, 45);
+  color: #fff;
+}
+.header-info button:hover {
+  background-color: rgb(109, 89, 23);
+  color: white;
+}
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+.icons {
+  flex-wrap: nowrap;
+}
+/* @media (max-width: 572px) {
+  .header-info input {
+    margin-top: 15px;
+  }
+  .doing ul {
+    margin-top: 1px;
+  }
+} */
